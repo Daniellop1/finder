@@ -21,12 +21,12 @@
 	<link rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png">
 	<link rel="manifest" href="manifest.json">
 
-	<meta name="application-name" content="Findto">
+	<meta name="application-name" content="Finder">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="theme-color" content="#fff">
 	<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192x192.png">
 
-	<meta name="apple-mobile-web-app-title" content="Findto">
+	<meta name="apple-mobile-web-app-title" content="Finder">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -39,10 +39,9 @@
 	<meta name="msapplication-wide310x150logo" content="images/icons/ms-widetile.png">
 	<meta name="msapplication-square310x310logo" content="images/icons/ms-largetile.png">
 
-	<meta itemprop="name" content="Findto.app">
+	<meta itemprop="name" content="Finder by Daniellop">
 	<meta itemprop="description" content="A web search tool for diversity & privacy.">
 	<meta itemprop="image" content="https://findto.app/search/images/share.png">
-
 	<meta property="fb:admins" content="#">
 	<meta property="og:url" content="http://findto.app">
 	<meta property="og:type" content="website">
@@ -56,16 +55,6 @@
 	<meta name="twitter:title" content="Findto.app">
 	<meta name="twitter:description" content="A web search tool for diversity & privacy.">
 	<meta name="twitter:image" content="https://findto.app/images/share.png">
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35946153-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-35946153-2');
-	</script>
-
 </head>
 
 <body id="body" class="main-color">
@@ -77,47 +66,47 @@
 
 			<button id="menu-button" type="button">Menu</button>
 
-			<ul>
-				<li>
-					<button id="default-tab" type="button" class="tab-button nav-btn icon-web"
-						onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-social"
-						onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-video"
-						onclick="hideEngines(); openTab(event, 'video-tab'); selectedButton(this); youtube()">Video</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-image"
-						onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-music"
-						onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-local"
-						onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Maps</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-shopping"
-						onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-news"
-						onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-knowledge"
-						onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-projects"
-						onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
-				</li>
+			<li>
+			<li>
+				<button id="default-tab" type="button" class="tab-button nav-btn icon-web"
+					onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-social"
+					onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-video"
+					onclick="hideEngines(); openTab(event, 'video-tab'); selectedButton(this); youtube()">Video</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-image"
+					onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-music"
+					onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-local"
+					onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Maps</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-shopping"
+					onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-news"
+					onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-knowledge"
+					onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
+			</li>
+			<li>
+				<button type="button" class="tab-button nav-btn icon-projects"
+					onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
+			</li>
 			</ul>
 
 			<button id="info-button" data-fancybox data-src="#info">Settings</button>
@@ -134,7 +123,7 @@
 			<!-- Voice Transcript -->
 			<div id="voice-transcript" onclick="closeVoiceTranscript(); inputFocus()">
 				<div>
-					<!-- <img id="status_img" src="mic.svg" alt="voice search"> -->
+					<img id="status_img" src="mic.svg" alt="voice search">
 					<p id="voice-transcript-text"></p>
 				</div>
 			</div>
@@ -569,8 +558,8 @@
 					<input type="radio" name="music" id="deezer" onclick="deezer()">
 					<label for="deezer">Deezer</label>
 
-					<!-- <input type="radio" name="music" id="shazam" onclick="shazam()">
-					<label for="shazam">Shazam</label> -->
+					<input type="radio" name="music" id="shazam" onclick="shazam()">
+					<label for="shazam">Shazam</label>
 
 					<input type="radio" name="music" id="tidal" onclick="tidal()">
 					<label for="tidal">TIDAL</label>
@@ -804,8 +793,6 @@
 			</div>
 
 	</section>
-
-
 	<!-- Widgets -->
 	<section>
 
@@ -828,12 +815,28 @@
 			<div class="widget widget-clock">
 
 				<figure>
-					<h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span>
-						<!-- , <span id="year"></span> -->
+					<h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span><span id="year"></span>
 					</h2>
 				</figure>
 
 				<p><span id="time"></span></p>
+			</div>
+			<!--Share-->
+			<div class="widget widget-share">
+
+				<figure>
+					<h2>Share</h2>
+				</figure>
+
+				<a href="https://twitter.com/intent/tweet?url=https://finder.2005danielus.ml&amp;text=Finder by Daniellop — A web search tool for diversity and privacy"
+					onclick="window.open(this.href, 'twitter-share', 'width=520,height=245');return false;"
+					class="icon-twitter" title="Twitter" aria-label="Tweet on Twitter">Tweet</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https://finder.2005danielus.ml"
+					onclick="window.open(this.href, 'facebook-share','width=580,height=420');return false;"
+					class="icon-facebook" title="Facebook" aria-label="Share on Facebook">Share</a>
+				<a href="https://github.com/daniellop1/finder/" target="_blank" rel="noopener" title="GitHub"
+					aria-label="Star on GitHub">Star</a>
+
 			</div>
 			<!-- Weather -->
 			<div class="widget widget-weather">
@@ -861,10 +864,10 @@
 	</div>
 
 	<footer>
-		<p><a data-fancybox data-src="#about" href="javascript:;">About</a> · <a data-fancybox data-src="#privacy"
-				href="javascript:;">Privacy</a> · <a data-fancybox data-src="#terms" href="javascript:;">Terms</a> · <a
-				data-fancybox data-src="#license" href="javascript:;">Licenses</a> · <a data-fancybox
-				data-src="#feedback" href="javascript:;">Feedback</a></p>
+		<p> <a href="https://github.com/Daniellop1/finder/wiki/Privacy">Privacy</a> · <a
+				href="https://github.com/Daniellop1/finder/wiki/Legal">Legal</a> ·
+			<a href="https://github.com/Daniellop1/finder/issues">Feedback</a>
+		</p>
 	</footer>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
