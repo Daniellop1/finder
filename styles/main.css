@@ -686,7 +686,7 @@ p, h1, h2, h3, h4 {
 
   .widgets { padding: 0; }
   .widget-quad { width: 98%; }
-  .widget-clock p, #weatherBlock h3 { font-size: 4rem; }
+  .widget-clock p,
   
   .widget-trends a {
     padding: 6px 1rem;
