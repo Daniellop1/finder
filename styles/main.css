@@ -541,34 +541,6 @@ p, h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-/* Weather */
-.widget-weather figure {
-  background-image: none;
-  padding: 0;
-}
-#weatherBlock h1 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-#weatherBlock h3 {
-  font-size: 4rem;
-  line-height: 1;
-  margin: 0 0 .75rem;
-  word-break: break-word;
-}
-#temp-btn {
-  display: none;
-}
-
-.wi:first-child {
-  padding-right: 18px;
-  font-size: 20px;
-}
-.wi:last-child {
-  padding-left: 18px;
-  font-size: 20px;
-}
-
 /* jQuery UI - Autocomplete */
 .ui-widget.ui-widget-content {
   border: none;
