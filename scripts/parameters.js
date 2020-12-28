@@ -586,7 +586,7 @@ function giphy() {
 
 function spotify() {
 	document.getElementById("spotify").checked = true;
-	xUrl = "https://open.spotify.com/search/results/";
+	xUrl = "https://open.spotify.com/search/";
 	xColor = "#24CF5F";
 	xImage = "spotify";
 	t3();
