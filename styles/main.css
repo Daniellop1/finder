@@ -530,7 +530,6 @@ p, h1, h2, h3, h4 {
 .widget-share a:nth-child(2) { background-image: url(../images/icon-twitter.svg); }
 .widget-share a:nth-child(3) { background-image: url(../images/icon-facebook.svg); }
 .widget-share a:nth-child(4) { background-image: url(../images/icon-github.svg); }
-
 /* Clock */
 .widget-clock p {
   float: none;
@@ -540,7 +539,6 @@ p, h1, h2, h3, h4 {
   font-size: 4rem;
   font-weight: bold;
 }
-
 /* jQuery UI - Autocomplete */
 .ui-widget.ui-widget-content {
   border: none;
@@ -581,26 +579,21 @@ p, h1, h2, h3, h4 {
 .ui-helper-hidden-accessible {
   display: none;
 }
-
 /* Media Queries */
-
 @media all and (max-width: 1100px) {
 
   .widget { width: 48%; }
 
 }
-
 @media screen and (max-width: 700px) {
 
   #menu-button, #info-button { display: none; }
-
   .extended {
     width: auto;
   }
   .extended-body {
     margin-left: 0;
   }
-
   body { margin: 0; }
   header {
     top: auto;
@@ -634,7 +627,6 @@ p, h1, h2, h3, h4 {
     width: auto;
     display: inline-block;
   }
-
   .tab-engines button {
     height: 48px;
     width: 48px;
@@ -657,7 +649,6 @@ p, h1, h2, h3, h4 {
     padding: 1rem .8rem;
     font-size: .9rem;
   }
-
   #search-input {
     height: 54px;
     padding: 0 5%; 
@@ -678,12 +669,10 @@ p, h1, h2, h3, h4 {
     height: 54px;
     width: 54px;
   }
-
   #search-img { 
     height: 100px; 
     background-size: auto 70px; 
   }
-
   .widgets { padding: 0; }
   .widget-quad { width: 98%; }
   .widget-clock p,
@@ -708,13 +697,14 @@ p, h1, h2, h3, h4 {
   .widget h2 {
     font-size: 1rem;
   }
-
   footer {
     padding: 3rem 5% 6rem;
   }
 }
-
 .fancybox-active {
   height: inherit;
   transition: unset;
 }
+.grecaptcha-badge { 
+  visibility: hidden;
+};

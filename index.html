@@ -53,6 +53,8 @@
 	<meta name="twitter:title" content="Finder by Daniel Lopez">
 	<meta name="twitter:description" content="A web search tool for diversity & privacy.">
 	<meta name="twitter:image" content="https://findto.app/images/share.png">
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5"></script>
 </head>
 
 <body id="body" class="main-color">
@@ -783,7 +785,15 @@
 						<button id="voice-button" onclick="reco.toggleStartStop(); openVoiceTranscript()"
 							aria-label="Voice search">Voice</button>
 					</div>
-
+					<script>
+						function onClick(e) {
+							e.preventDefault();
+							grecaptcha.ready(function () {
+								grecaptcha.execute('6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5', { action: 'submit' }).then(function (token) {
+								});
+							});
+						}
+					</script>
 				</form>
 
 			</div>
