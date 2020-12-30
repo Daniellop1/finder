@@ -93,6 +93,7 @@ nav button:focus {
 .icon-news { background-image: url(../images/icon-news.svg); }
 .icon-knowledge { background-image: url(../images/icon-book.svg); }
 .icon-projects { background-image: url(../images/icon-project.svg); }
+.icon-jobs { background-image: url(../images/jobs.svg); }
 
 .extended-body {
   margin-left: 200px;
@@ -264,7 +265,7 @@ p, h1, h2, h3, h4 {
   border-radius: 2rem;
   outline: none;
   color: #fff;
-  font-weight: 500;
+  font-ƒight: 500;
   font: 1.25rem 'IBM Plex Mono', sans-serif;
   background-color: rgba(0, 0, 0, 0.06);
   letter-spacing: normal;
@@ -602,7 +603,7 @@ p, h1, h2, h3, h4 {
     height: auto;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
   }
   nav {
     position: relative;
