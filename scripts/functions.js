@@ -3,11 +3,11 @@
 */
 
 if ('serviceWorker' in navigator) {
-	window.addEventListener('load', function() {
-		navigator.serviceWorker.register('service____worker.js').then(function(registration) {
+	window.addEventListener('load', function () {
+		navigator.serviceWorker.register('service____worker.js').then(function (registration) {
 			// registration was successful
 			console.log('Service Worker registration successful, with scope: ', registration.scope);
-		}).catch(function(err) {
+		}).catch(function (err) {
 			// registration failed
 			console.log('Service Worker registration failed, with error: ', err);
 		});
@@ -21,16 +21,16 @@ if ('serviceWorker' in navigator) {
 // show only one div while hide others
 function openTab(evt, tabName) {
 	var i, tabcontent, tabbutton;
-    tabcontent = document.getElementsByClassName('tab');
-    	for (i = 0; i < tabcontent.length; i++) {
-    		tabcontent[i].style.display = 'none';
-    	}
-    tabbutton = document.getElementsByClassName('tab-button');
-    	for (i = 0; i < tabbutton.length; i++) {
-    		tabbutton[i].className = tabbutton[i].className.replace(' tab-active', '');
-    	}
-    document.getElementById(tabName).style.display = 'block';
-    evt.currentTarget.className += ' tab-active';
+	tabcontent = document.getElementsByClassName('tab');
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = 'none';
+	}
+	tabbutton = document.getElementsByClassName('tab-button');
+	for (i = 0; i < tabbutton.length; i++) {
+		tabbutton[i].className = tabbutton[i].className.replace(' tab-active', '');
+	}
+	document.getElementById(tabName).style.display = 'block';
+	evt.currentTarget.className += ' tab-active';
 }
 
 // click on default tab
@@ -41,34 +41,34 @@ document.getElementById('default-tab').click();
 */
 
 // expand and retract menu
-$('body').ready(function() {
-	$('#menu-button').click(function() {
-	// inputFocus();
-	  if ($("#menu-nav").hasClass("extended")) {
-		$("body").removeClass('extended-body');
-		$("#menu-nav").removeClass('extended');
-	  }
-	  else {
-		$("body").addClass('extended-body');
-		$("#menu-nav").addClass('extended');   
-	  }
+$('body').ready(function () {
+	$('#menu-button').click(function () {
+		// inputFocus();
+		if ($("#menu-nav").hasClass("extended")) {
+			$("body").removeClass('extended-body');
+			$("#menu-nav").removeClass('extended');
+		}
+		else {
+			$("body").addClass('extended-body');
+			$("#menu-nav").addClass('extended');
+		}
 	});
-  });
-  
-  // change nav item style when selected
-  function selectedButton(element) {  
-	  
+});
+
+// change nav item style when selected
+function selectedButton(element) {
+
 	var btn = document.querySelectorAll(".nav-btn");
-  
-	  for (var i = 0; i < btn.length; i ++) {
-		  btn.item(i).style.backgroundColor='transparent';
-		  btn.item(i).style.opacity='0.5';
-		  btn.item(i).style.boxShadow='none';
-		  element.style.backgroundColor='rgba(255, 255, 255, 0.15)';
-		  element.style.opacity='1';
-		  element.style.boxShadow='0 5px 10px rgba(0,0,0,.035)';
-	  }
-  }
+
+	for (var i = 0; i < btn.length; i++) {
+		btn.item(i).style.backgroundColor = 'transparent';
+		btn.item(i).style.opacity = '0.5';
+		btn.item(i).style.boxShadow = 'none';
+		element.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+		element.style.opacity = '1';
+		element.style.boxShadow = '0 5px 10px rgba(0,0,0,.035)';
+	}
+}
 
 /*
 	Engines Tab
@@ -85,15 +85,15 @@ function showEngines() {
 
 // change engine button style when selected
 function selectedEngine(element) {
-  var engineButton = document.querySelectorAll(".eng-btn");
+	var engineButton = document.querySelectorAll(".eng-btn");
 
-	for (var i = 0; i < engineButton.length; i ++) {
-		engineButton.item(i).style.backgroundColor='transparent';
-		engineButton.item(i).style.opacity='0.5';
-    	engineButton.item(i).style.boxShadow='none';
-		element.style.backgroundColor='rgba(255,255,255,.15)';
-		element.style.opacity='1';
-    	element.style.boxShadow='0 5px 10px rgba(0,0,0,.035)';
+	for (var i = 0; i < engineButton.length; i++) {
+		engineButton.item(i).style.backgroundColor = 'transparent';
+		engineButton.item(i).style.opacity = '0.5';
+		engineButton.item(i).style.boxShadow = 'none';
+		element.style.backgroundColor = 'rgba(255,255,255,.15)';
+		element.style.opacity = '1';
+		element.style.boxShadow = '0 5px 10px rgba(0,0,0,.035)';
 	}
 }
 
@@ -107,21 +107,21 @@ function inputFocus() {
 }
 
 // event listener to focus on "input"
-document.getElementById('menu-nav').addEventListener('click', function() {
-  inputFocus();
+document.getElementById('menu-nav').addEventListener('click', function () {
+	inputFocus();
 });
-document.getElementById('tabs').addEventListener('click', function() {
-  inputFocus();
+document.getElementById('tabs').addEventListener('click', function () {
+	inputFocus();
 });
 
 // show reset button only when user type on "input"
 function checkValue() {
 	if (inputSubmit.value !== '') {
 		document.getElementById('reset-button').style.display = "inline-block";
-  }
+	}
 	else {
 		document.getElementById('reset-button').style.display = "none";
-  }
+	}
 }
 
 // reset form values, remove reset button, focus on input
@@ -155,12 +155,12 @@ function clearHelper() {
 }
 
 // set main background color
-function changeColor(){
+function changeColor() {
 	mainColor.style.backgroundColor = xColor;
 }
 
 // set logo image
-function changeImage(){
+function changeImage() {
 	logoImage.style.backgroundImage = "url('images/logos/" + xImage + ".svg')";
 }
 
@@ -185,7 +185,7 @@ function t2() {
 
 // Template 3: clear query string and helpers, remove parameters "q="
 function t3() {
-	
+
 	changeColor();
 	changeImage();
 	inputSubmit.name = "";
@@ -204,8 +204,8 @@ function t3() {
 	Warning
 */
 var warning = ['DOM is fully loaded and parsed :)', '</> Build in progress']
-	document.addEventListener('DOMContentLoaded',
-	function(){
+document.addEventListener('DOMContentLoaded',
+	function () {
 		console.log(warning[0]);
 	}
 );
@@ -219,15 +219,15 @@ console.log('%cfindto.app', 'background:#000;color:#fff;padding:5px 10px;');
 
 $(".tabs").tabs();
 var currentTab = $('.ui-state-active a').index();
-if(localStorage.getItem('activeTab') != null){
-	 $('.tabs > ul > li:nth-child('+ (parseInt(localStorage.getItem('activeTab')) + 1)  +')').find('a').click();
+if (localStorage.getItem('activeTab') != null) {
+	$('.tabs > ul > li:nth-child(' + (parseInt(localStorage.getItem('activeTab')) + 1) + ')').find('a').click();
 }
 
- $('.tabs > ul > li > a').click(function(e) {
-  var curTab = $('.ui-tabs-active');
-  curTabIndex = curTab.index();
-  localStorage.setItem('activeTab', curTabIndex);
- });
+$('.tabs > ul > li > a').click(function (e) {
+	var curTab = $('.ui-tabs-active');
+	curTabIndex = curTab.index();
+	localStorage.setItem('activeTab', curTabIndex);
+});
 
 
 // $('.tab-button').click(function(){

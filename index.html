@@ -1,68 +1,66 @@
 <!DOCTYPE html>
-<html ⚡>
+<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport"
-		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-	<title>Daniellop Finder</title>
-	<meta name="description"
-		content="A web search tool for diversity and privacy. Find anything with the power of multiple search engines and sites.">
-	<meta name="keywords" content="web search tool, search interface concept, open source search">
+<title>Daniellop Finder</title>
+<meta name="description"
+	content="A web search tool for diversity and privacy. Find anything with the power of multiple search engines and sites.">
+<meta name="keywords" content="web search tool, search interface concept, open source search">
 
-	<link rel="stylesheet" type="text/css"
-		href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 
-	<link rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png">
-	<link rel="manifest" href="manifest.json">
+<link rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png">
+<link rel="manifest" href="manifest.json">
 
-	<meta name="application-name" content="Finder">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="theme-color" content="#fff">
-	<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192x192.png">
+<meta name="application-name" content="Finder">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#fff">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192x192.png">
 
-	<meta name="apple-mobile-web-app-title" content="Finder">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Finder">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<meta name="msapplication-tap-highlight" content="no">
-	<meta name="msapplication-TileColor" content="#333">
-	<meta name="msapplication-TileImage" content="images/icons/ms-tile.png">
-	<meta name="msapplication-square70x70logo" content="images/icons/ms-smalltile.png">
-	<meta name="msapplication-square150x150logo" content="images/icons/ms-mediumtile.png">
-	<meta name="msapplication-wide310x150logo" content="images/icons/ms-widetile.png">
-	<meta name="msapplication-square310x310logo" content="images/icons/ms-largetile.png">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="msapplication-TileColor" content="#333">
+<meta name="msapplication-TileImage" content="images/icons/ms-tile.png">
+<meta name="msapplication-square70x70logo" content="images/icons/ms-smalltile.png">
+<meta name="msapplication-square150x150logo" content="images/icons/ms-mediumtile.png">
+<meta name="msapplication-wide310x150logo" content="images/icons/ms-widetile.png">
+<meta name="msapplication-square310x310logo" content="images/icons/ms-largetile.png">
 
-	<meta itemprop="name" content="Finder by Daniellop">
-	<meta itemprop="description" content="A web search tool for diversity & privacy.">
-	<meta property="fb:admins" content="#">
-	<meta property="og:url" content="http://finder.2005danielus.ml">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Finder by Daniel Lopez">
-	<meta property="og:description" content="A web search tool for diversity & privacy.">
-	<meta property="og:site_name" content="Finder by Daniel Lopez">
+<meta itemprop="name" content="Finder by Daniellop">
+<meta itemprop="description" content="A web search tool for diversity & privacy.">
+<meta property="fb:admins" content="#">
+<meta property="og:url" content="http://finder.2005danielus.ml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Finder by Daniel Lopez">
+<meta property="og:description" content="A web search tool for diversity & privacy.">
+<meta property="og:site_name" content="Finder by Daniel Lopez">
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@daniellop1">
-	<meta name="twitter:title" content="Finder by Daniel Lopez">
-	<meta name="twitter:description" content="A web search tool for diversity & privacy.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@daniellop1">
+<meta name="twitter:title" content="Finder by Daniel Lopez">
+<meta name="twitter:description" content="A web search tool for diversity & privacy.">
 
-	<script src="https://www.google.com/recaptcha/api.js?render=6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5"></script>
 
-	<!--Translation-->
+<!--Translation-->
 
-	<link rel="alternate" hreflang="en" href="https://2005danielus.ml">
-	<link rel="alternate" hreflang="es" href="https://es.2005danielus.ml">
-	<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-	<script>
-		Weglot.initialize({
-			api_key: 'wg_94a850bb2d49bea6ec6cd1fd0ca767d93'
-		});
-	</script>
+<link rel="alternate" hreflang="en" href="https://2005danielus.ml">
+<link rel="alternate" hreflang="es" href="https://es.2005danielus.ml">
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+	Weglot.initialize({
+		api_key: 'wg_94a850bb2d49bea6ec6cd1fd0ca767d93'
+	});
+</script>
 </head>
 
 <body id="body" class="main-color">
@@ -74,48 +72,53 @@
 
 			<button id="menu-button" type="button">Menu</button>
 
-			<li>
-			<li>
-				<button id="default-tab" type="button" class="tab-button nav-btn icon-web"
-					onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-social"
-					onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-video"
-					onclick="hideEngines(); openTab(event, 'video-tab'); selectedButton(this); youtube()">Video</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-image"
-					onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-music"
-					onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-local"
-					onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Maps</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-shopping"
-					onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-news"
-					onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-knowledge"
-					onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
-			</li>
-			<li>
-				<button type="button" class="tab-button nav-btn icon-projects"
-					onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
-			</li>
+			<ul>
+				<li>
+					<button id="default-tab" type="button" class="tab-button nav-btn icon-web"
+						onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-social"
+						onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-video"
+						onclick="hideEngines(); openTab(event, 'video-tab'); selectedButton(this); youtube()">Video</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-image"
+						onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-music"
+						onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-local"
+						onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Local</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-shopping"
+						onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-news"
+						onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-knowledge"
+						onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-projects"
+						onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
+				</li>
+				<li>
+					<button type="button" class="tab-button nav-btn icon-torrent"
+						onclick="hideEngines(); openTab(event, 'torrent-tab'); selectedButton(this); pirateBay()">Torrent</button>
+				</li>
 			</ul>
+
 			<button id="info-button" data-fancybox data-src="#info">Settings</button>
 
 		</nav>
@@ -130,12 +133,14 @@
 			<!-- Voice Transcript -->
 			<div id="voice-transcript" onclick="closeVoiceTranscript(); inputFocus()">
 				<div>
-					<img id="status_img" src="mic.svg" alt="voice search">
+					<!-- <img id="status_img" src="mic.svg" alt="voice search"> -->
 					<p id="voice-transcript-text"></p>
 				</div>
 			</div>
+
 			<!-- Tabs -->
 			<div id="tabs">
+
 				<!-- Engines -->
 				<div id="tab-engines" class="tab-engines">
 
@@ -563,8 +568,8 @@
 					<input type="radio" name="music" id="deezer" onclick="deezer()">
 					<label for="deezer">Deezer</label>
 
-					<input type="radio" name="music" id="shazam" onclick="shazam()">
-					<label for="shazam">Shazam</label>
+					<!-- <input type="radio" name="music" id="shazam" onclick="shazam()">
+					<label for="shazam">Shazam</label> -->
 
 					<input type="radio" name="music" id="tidal" onclick="tidal()">
 					<label for="tidal">TIDAL</label>
@@ -630,7 +635,7 @@
 
 				</div>
 
-				<!-- Maps -->
+				<!-- Local -->
 				<div class="tab" id="local-tab">
 
 					<input type="radio" id="foursquare" name="local" onclick="foursquare()" checked>
@@ -769,46 +774,43 @@
 					<label for="indiegogo">Indiegogo</label>
 
 				</div>
-				<!-- Search Form -->
-				<form id="search-form" method="GET" action="https://www.google.com/search?q=" accept-charset="UTF-8"
-					role="search">
-
-					<div id="search-img"></div>
-
-					<input id="search-input" type="text" name="q" value="" placeholder="" onkeypress="checkValue()"
-						onkeyup="checkValue()" onchange="checkValue()" maxlength="100" autocomplete="on" autofocus
-						required>
-
-					<input id="reset-button" type="reset" value="Reset" onclick="resetForm()"
-						aria-label="Clear search field" title="Reset">
-
-					<input id="search-button" type="submit" value="Search" onclick="this.form.target='_blank';"
-						aria-label="Search" title="Search">
-
-					<input id="helper" type="hidden" name="" value="">
-
-					<div id="voice-container">
-						<span id="voice-animation"></span>
-						<button id="voice-button" onclick="reco.toggleStartStop(); openVoiceTranscript()"
-							aria-label="Voice search">Voice</button>
-					</div>
-					<script>
-						function onClick(e) {
-							e.preventDefault();
-							grecaptcha.ready(function () {
-								grecaptcha.execute('6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5', { action: 'submit' }).then(function (token) {
-								});
-							});
-						}
-					</script>
-				</form>
-
 			</div>
 
+			<!-- Search Form -->
+			<form id="search-form" method="GET" action="https://www.google.com/search?q=" accept-charset="UTF-8"
+				role="search">
+
+				<div id="search-img"></div>
+
+				<input id="search-input" type="text" name="q" value="" placeholder="" onkeypress="checkValue()"
+					onkeyup="checkValue()" onchange="checkValue()" maxlength="100" autocomplete="on" autofocus required>
+
+				<input id="reset-button" type="reset" value="Reset" onclick="resetForm()"
+					aria-label="Clear search field" title="Reset">
+
+				<input id="search-button" type="submit" value="Search" onclick="this.form.target='_blank';"
+					aria-label="Search" title="Search">
+
+				<input id="helper" type="hidden" name="" value="">
+
+				<div id="voice-container">
+					<span id="voice-animation"></span>
+					<button id="voice-button" onclick="reco.toggleStartStop(); openVoiceTranscript()"
+						aria-label="Voice search">Voice</button>
+				</div>
+
+			</form>
+
+		</div>
+
 	</section>
+
+
 	<!-- Widgets -->
 	<section>
+
 		<div class="widgets">
+
 			<!-- Trends -->
 			<div class="widget widget-trends">
 
@@ -826,29 +828,33 @@
 			<div class="widget widget-clock">
 
 				<figure>
-					<h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span><span id="year"></span>
+					<h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span>
+						<!-- , <span id="year"></span> -->
 					</h2>
 				</figure>
 
 				<p><span id="time"></span></p>
 			</div>
-			<!--Share-->
+
+			<!-- Share -->
 			<div class="widget widget-share">
 
 				<figure>
 					<h2>Share</h2>
 				</figure>
 
-				<a href="https://twitter.com/intent/tweet?url=https://finder.2005danielus.ml&amp;text=Finder by Daniellop — A web search tool for diversity and privacy"
+				<a href="https://twitter.com/intent/tweet?url=https://findto.app&amp;text=Findto.app — A web search tool for diversity and privacy"
 					onclick="window.open(this.href, 'twitter-share', 'width=520,height=245');return false;"
 					class="icon-twitter" title="Twitter" aria-label="Tweet on Twitter">Tweet</a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https://finder.2005danielus.ml"
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https://findto.app"
 					onclick="window.open(this.href, 'facebook-share','width=580,height=420');return false;"
 					class="icon-facebook" title="Facebook" aria-label="Share on Facebook">Share</a>
-				<a href="https://github.com/daniellop1/finder/" target="_blank" rel="noopener" title="GitHub"
+				<a href="https://github.com/inblug/findto/" target="_blank" rel="noopener" title="GitHub"
 					aria-label="Star on GitHub">Star</a>
 
 			</div>
+		</div>
+
 	</section>
 
 	<!-- Settings -->

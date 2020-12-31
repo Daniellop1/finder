@@ -1,11 +1,3 @@
-/*
-  Web Speech API
-  https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
-*/
-
-// a simple implementation designed to allow overwriting of nearly all attributes and function callbacks to implement custom behavior
-
-// create and return new WebSpeechRecognition object
 function WebSpeechRecognition() {
   var r = this;
   r.continuous = false;
@@ -16,39 +8,37 @@ function WebSpeechRecognition() {
   var recognizing = false;
   var ignore_onend;
 
-  // return false if speech recognition is unavailable (typically occurs when using a browser that does not support it)
   r.supported = function () {
     return !!r.recognition;
   };
 
-  // sets the object which will receive status as text messages
   r.statusText = function (id) {
     r.status_elem = r.getElem(id);
     r.refreshState();
   };
 
-  // sets the object which will receive status as images
+
   r.statusImage = function (id) {
     r.image_elem = r.getElem(id);
     r.refreshState();
   };
 
-  // sets the object which will receive final text results
+
   r.finalResults = function (id) {
     r.final_results = r.getElem(id);
   };
 
-  // sets the object which will receive interim text results
+
   r.interimResults = function (id) {
     r.interim_results = r.getElem(id);
   };
 
-  // return true if recognition is in progress
+
   r.inProgress = function () {
     return recognizing;
   };
 
-  // start recognition
+
   r.start = function () {
     recognizing = true;
     ignore_onend = false;
@@ -65,13 +55,13 @@ function WebSpeechRecognition() {
     r.onState('allow');
   };
 
-  // stop recognition
+
   r.stop = function () {
     recognizing = false;
     r.recognition.stop();
   };
 
-  // toggle recognition between Start and Stop states
+
   r.toggleStartStop = function () {
     if (reco.inProgress()) {
       reco.stop();
@@ -80,9 +70,6 @@ function WebSpeechRecognition() {
     }
   };
 
-  //
-  // All functions below are rarely called directly by the web page
-  //
 
   r.onState = function (key) {
     r.onStatusChange(key);
@@ -94,7 +81,7 @@ function WebSpeechRecognition() {
     r.onState(r.currentState);
   };
 
-  // Set status field to text corresponding to key.  See status_array for valid values of key.  An invalid value of key will hide the status message.
+
   r.onStatusChange = function (key) {
     if (!!r.status_elem) {
       var s = r.status_array[key];
@@ -107,7 +94,7 @@ function WebSpeechRecognition() {
     }
   };
 
-  // Set button image corresponding to key. See image_array for valid values of key.  An invalid value of key will show the image in its 'disable' state.
+
   r.onImageChange = function (key) {
     if (!!r.image_elem) {
       var f = r.image_array[key];
@@ -128,8 +115,7 @@ function WebSpeechRecognition() {
     }
   };
 
-  // id is a DOM element or a string containing id or null.
-  // Returns DOM element or null.
+
   r.getElem = function (id) {
     if (typeof (id) == 'string') {
       return document.getElementById(id);
@@ -215,7 +201,7 @@ var status_array_en = {
   'upgrade': 'Speech recognition API is not supported by this browser. Upgrade to ' + '<a href="//chrome.com">Chrome</a> or <a href="//firefox.com">Firefox</a>.'
 };
 
-// button images for various status conditions
+
 var image_array_mic = {
   'ready': 'mic.gif',
   'complete': 'mic.gif',
@@ -224,7 +210,7 @@ var image_array_mic = {
   'disable': 'mic-slash.gif'
 };
 
-// final actions
+
 var reco = new WebSpeechRecognition();
 reco.statusText('status');
 reco.statusImage('status_img');
@@ -258,27 +244,7 @@ function closeVoiceTranscript() {
   document.getElementById("tabs").style.visibility = "visible";
 }
 
-
-
 navigator.getMedia = (navigator.getUserMedia ||
   navigator.webkitGetUserMedia ||
   navigator.mozGetUserMedia ||
   navigator.msGetUserMedia);
-
-navigator.getMedia(
-
-  permissoes, {
-  audio: true
-},
-
-  // callback sucess
-  function (localMediaStream) {
-    expandMenu();
-  },
-
-  // callback error
-  function (err) {
-    console.log("ha ocurrido el siguiente error: " + err);
-  }
-
-);
