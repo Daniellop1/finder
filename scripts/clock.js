@@ -20,9 +20,9 @@ function getCurrentTime(date) {
 
   hours = leading_0(hours);
   minutes = leading_0(minutes);
-  // seconds = leading_0(seconds);
 
-  fullTime = hours + ':' + minutes; // + ':' + seconds + ' ' + suffix 
+
+  fullTime = hours + ':' + minutes;
 
   return fullTime;
 }
@@ -62,20 +62,20 @@ function pushDate() {
     wkDay,
     month,
     day,
-    // year,
+    year,
     time,
     d = document;
 
   wkDay = getWkDay(today);
   month = getMonth(today);
   day = getMonthDay(today);
-  // year = getYear(today);
+  year = getYear(today);
   time = getCurrentTime(today);
 
   d.getElementById('wkDay').textContent = wkDay;
   d.getElementById('month').textContent = month;
   d.getElementById('day').textContent = day;
-  // d.getElementById('year').textContent = year;
+  d.getElementById('year').textContent = year;
   d.getElementById('time').textContent = time;
 }
 
